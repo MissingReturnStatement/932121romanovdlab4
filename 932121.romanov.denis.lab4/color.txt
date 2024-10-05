@@ -1,0 +1,6 @@
+#edeef0 	-bg
+green 		-selection
+#e1e5eb 	-bg selection
+#507299		-header
+#2e5473 	- text
+#d0d0d0		- footer

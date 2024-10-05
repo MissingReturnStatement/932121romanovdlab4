@@ -1,0 +1,149 @@
+* {           
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #507299;
+}
+header > img{
+    padding-top: 6px;
+    padding-bottom: 3px;
+    padding-left: 15%;
+}
+footer{
+    padding: 3px;
+    color: #d0d0d0;
+    text-align: center;
+    background-color: white;
+    clear: both;
+}
+body{
+    background-color: #edeef0;
+}
+.content{
+    width: 30%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 22%;
+}
+.post{
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: justify;
+}
+::selection{
+    background-color: #e1e5eb;
+    color: green;
+}
+.menu{
+    width: 12%;
+    min-width: 200px;
+    margin: 20px;
+}
+.content img{
+    width: 100%;
+    height: auto;
+}
+.wrapper{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+a{
+    color: #2e5473;
+    text-decoration: none;
+}
+ul.nav{
+    min-width: 400px;
+    list-style: none;
+}
+ul.nav a{
+    display: inline-block;
+    width: 11em;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:0;
+}
+ul.nav a:hover{
+    background-color: #e1e5eb;
+}
+.divider{
+    height: 4px;
+    margin: 10px 0;
+    background-color: #d0d0d0;
+}
+.comment{
+    float: right;
+}
+.ad{
+    width: 180px;
+    position: fixed;
+    right: 10%;
+    top: 80px;
+    
+}
+.ad .post{
+    padding: 10px;
+}
+.post h3{
+    text-align: left;
+    width: 100px;
+    margin: 20px 5px;
+}
+.post p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #edeef0;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .ad{
+        display: none;
+    }
+}
+@media (max-width: 769px) {
+    .ad{
+        display: none;
+    }
+    .wrapper{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .content{
+        width: 100%;
+        min-width: none;
+    }
+    .post{
+        margin: 10px;
+        margin-right: 25px;
+    }
+    .menu{
+        width: 90%;
+        min-width: none;
+    }
+    ul.nav{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    ul.nav a{
+        width: auto;
+    }
+    ul.nav li{
+        display: inline-block;
+        vertical-align: top;
+        padding: 3px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
